@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:black}
+    .fil1 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="2858.81" y1="3677.04" x2="16205.6" y2="18853.1">
+   <stop offset="0" style="stop-opacity:1; stop-color:black"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#00B41E"/>
+  </linearGradient>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path id="path4625-8-3-1-0-1" class="fil0" d="M7899 11353c-1324,-1718 -1491,-4345 -1755,-5333l524 327c1016,633 920,584 1027,526 52,-28 233,-108 401,-177l307 -127 50 -249c27,-137 98,-508 158,-824 98,-520 114,-574 176,-580 37,-4 348,-46 690,-93 342,-48 629,-87 638,-87 8,0 202,335 431,744l416 745 447 59 448 59 530 -599c292,-329 548,-604 569,-610 36,-11 1292,494 1321,532 8,9 12,394 9,853l-6 836 132 87c73,47 236,169 362,269l230 182 796 -249 796 -250 452 569 452 569 -207 348c-113,191 -303,513 -423,716l-217 368 149 327c82,181 163,368 181,417 29,84 47,92 347,160 975,220 1317,301 1328,315 26,32 239,1379 223,1407 -9,15 -317,190 -685,389 -369,198 -688,375 -710,393 -22,17 -60,229 -83,470l-43 439 563 511c311,281 592,545 626,587 60,74 57,87 -136,606 -108,292 -221,586 -251,654l-53 123c-212,-1009 -1076,-2842 -3995,-3741 672,-3006 -1923,-4266 -3743,-4001 -1208,177 -2142,1124 -2472,2333z" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccccccccccsccccccscccccccccccccccsccscccccccccc"/>
+  <path id="path2178-1-6-5" class="fil1" d="M6008 14094c0,0 1942,2560 5170,3379 2774,703 5200,300 6931,-711 0,0 -462,-4362 -8191,-4242 -3358,-192 -3594,-6661 -3774,-6500 -5253,2834 -5480,16434 4384,17021 5107,114 7436,-4988 7568,-5414 0,0 -3982,3141 -8034,1935 -3833,-1142 -4054,-5468 -4054,-5468z" inkscape:connector-curvature="0" sodipodi:nodetypes="cssscccsc"/>
+ </g>
+</svg>
