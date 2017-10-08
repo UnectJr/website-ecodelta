@@ -1,9 +1,31 @@
-.marcador{
-	background: #fe9d9d;
-	border: 1px solid #f94646;
+/*
+*
+*@author Gardheam Santos
+*@version 0.1
+*/
+/* ================== Layout ================= */
+body {
+	background: url(imagens/capa.png)no-repeat;
 }
 
-.marcador2{
-	background: #5bf946;
-	border: 1px solid #36ae26;
+/* --- Barra de Navegação ---*/
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url(imagens/logo.svg) no-repeat;
+	border: 1px solid red;
+	background-size: contain;
+	color: transparent;
 }
+
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+	border: none; 
+}
+
+.navbar-brand {
+		padding: 5px 15px;
+}
+/*================== Tipografia =============== */
