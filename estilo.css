@@ -4,8 +4,17 @@
 *@version 0.1
 */
 /* ================== Layout ================= */
+
+/* --- body ---*/
+html, body, .capa {
+	height: 100%;
+}
+
 body {
-	background: url(imagens/capa.png)no-repeat;
+	background: url('imagens/capa.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	font-family: Helvetica,Arial,sans-serif;
 }
 
 /* --- Barra de Navegação ---*/
@@ -13,19 +22,83 @@ body {
 	height: 40px;
 	width: 132px;
 	display: block;
-	background: url(imagens/logo.svg) no-repeat;
-	border: 1px solid red;
+	background: url(imagens/logo.png) no-repeat;
 	background-size: contain;
 	color: transparent;
 }
 
 nav.navbar-transparente{
 	padding: 15px 0px;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.7);
 	border: none; 
 }
 
 .navbar-brand {
 		padding: 5px 15px;
 }
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #00FF00;
+}
+.capa {
+	border: 1px solid red;
+}
+
+/* -- Imagem de capa -- */
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* -- Botoes -- */
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-verde {
+	background: #9ACD32;
+}
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
 /*================== Tipografia =============== */
+
+h1 {
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: #000000;
+}
