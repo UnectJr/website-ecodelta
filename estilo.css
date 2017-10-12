@@ -110,11 +110,20 @@ nav.navbar-transparente{
 }
 /* -- Seção COMPETIÇÃO -- */
 #competicao{
-	background: white;
+	background: rgba(0,10,0,0.7);
 	padding-top: 20px;
 	padding-bottom: 20px: 
 }
+#parceiros{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
+#contatos{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 /*================== Tipografia =============== */
 
 h1 {
@@ -138,12 +147,6 @@ h3{
 }
 
 /* Text border */
-.borda {
-    text-shadow: 1px 0px 0px black, 
-                 -1px 0px 0px black, 
-                 0px 1px 0px black, 
-                 0px -1px 0px black;
-    }
 .borda-2px {
 	text-shadow:#000 1px -1px 2px,
 				#000 -1px 1px 2px,
@@ -174,4 +177,21 @@ h3{
 }
 #competicao p {
 	font-size: 15px;
+	color: #fff;
+}
+
+#parceiros h2,#parceiros h3{
+	color: #006400;
+	text-shadow:#000 1px -1px 2px,
+				#000 -1px 1px 2px,
+				#000 1px 1px 2px,
+				#000 -1px -1px 2px
+}
+#parceiros p {
+	font-size: 20px;
+	color: #fff;
+}
+
+#contatos h2, #contatos h3 {
+	color: #32CD32;
 }
