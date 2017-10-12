@@ -49,7 +49,7 @@ nav.navbar-transparente{
 	color: #00FF00;
 }
 .capa {
-	border: 1px solid red;
+	
 }
 
 /* -- Imagem de capa -- */
@@ -93,6 +93,28 @@ nav.navbar-transparente{
 	color: black;
 }
 
+/* -- Seção QUEM-SOMOS -- */
+#quem-somos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+/* -- Seção SUBSISTEMAS -- */
+#subsistemas{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/* -- Seção COMPETIÇÃO -- */
+#competicao{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px: 
+}
+
 /*================== Tipografia =============== */
 
 h1 {
@@ -101,4 +123,55 @@ h1 {
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
 	color: #000000;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+/* Text border */
+.borda {
+    text-shadow: 1px 0px 0px black, 
+                 -1px 0px 0px black, 
+                 0px 1px 0px black, 
+                 0px -1px 0px black;
+    }
+.borda-2px {
+	text-shadow:#000 1px -1px 2px,
+				#000 -1px 1px 2px,
+				#000 1px 1px 2px,
+				#000 -1px -1px 2px
+	}
+#quem-somos h2,#quem-somos h3{
+	color: #006400;
+}
+#quem-somos p {
+	font-size: 15px;
+}
+
+#subsistemas h2, #subsistemas h3{
+	color: #32CD32;
+}
+#subsistemas p {
+	font-size: 15px;
+	color: #fff;
+}
+
+#competicao h2,#competicao h3{
+	color: #006400;
+	text-shadow:#000 1px -1px 2px,
+				#000 -1px 1px 2px,
+				#000 1px 1px 2px,
+				#000 -1px -1px 2px
+}
+#competicao p {
+	font-size: 15px;
 }
