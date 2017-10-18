@@ -116,9 +116,6 @@ nav.navbar-transparente{
 	padding-bottom: 20px;
 }
 
-#quem-somos {
-	/*text-align: center;*/
-}
 
 #quem-somos h2, #quem-somos h3 {
 	color: #2CBC62;
@@ -158,6 +155,13 @@ nav.navbar-transparente{
 	width: 150px;
 	height: 150px;
 }
+
+#subsistemas img:hover{
+	width: 130px;
+	height: 130px;
+	transition: width 0.4s, height 0.4s;
+}
+
 .caixa{
 	width: 100%;
 	height: 350px;
@@ -260,15 +264,6 @@ p {
 	margin-bottom: 24px;
 	width: 70%;
 	margin: 0 auto;
-}
-
-
-/* Text border */
-.borda-2px {
-	/*text-shadow:#000 1px -1px 2px,
-				#000 -1px 1px 2px,
-				#000 1px 1px 2px,
-				#000 -1px -1px 2px*/
 }
 
 .texto-capa h1 {
