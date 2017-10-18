@@ -6,6 +6,8 @@
 /* ================== Layout ================= */
 
 /* --- body ---*/
+
+
 html, body, .capa {
 	height: 100%;
 }
@@ -14,7 +16,12 @@ body {
 	background: url('imagens/capa.jpg');
 	background-attachment: fixed;
 	background-size: 100%;
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
+	background-color: #195b7d;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
 }
 
 /* --- Barra de Navegação ---*/
@@ -29,14 +36,15 @@ body {
 
 nav.navbar-transparente{
 	padding: 15px 0px;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0, 0, 0, 0.7);
 	border: none; 
 }
 
 .navbar-brand {
 		padding: 5px 15px;
 }
-.divisor{
+
+.divisor {
 	width: 1px;
 	height: 16px;
 	background: white;
@@ -46,16 +54,16 @@ nav.navbar-transparente{
 	color: white;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
-	color: #00FF00;
+	/*color: #00FF00;*/
+	color: #38ef7d;
 }
-.capa {
-	
-}
+
 
 /* -- Imagem de capa -- */
 .capa {
 	display: table;
 	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .texto-capa {
@@ -63,6 +71,12 @@ nav.navbar-transparente{
 	color: white;
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.texto-capa h1 {
+	background: linear-gradient(#11998e, #38ef7d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /* -- Botoes -- */
@@ -80,6 +94,7 @@ nav.navbar-transparente{
 .btn-verde {
 	background: #9ACD32;
 }
+
 .btn-roxo:hover {
 	background-color: #6207e3;
 	color: white;
@@ -88,6 +103,7 @@ nav.navbar-transparente{
 .btn-branco {
 	border: 2px solid white;
 }
+
 .btn-branco:hover {
 	background-color: white;
 	color: black;
@@ -95,112 +111,168 @@ nav.navbar-transparente{
 
 /* -- Seção QUEM-SOMOS -- */
 #quem-somos {
-	background: white;
+	background-color: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.albuns{
+#quem-somos {
+	/*text-align: center;*/
+}
+
+#quem-somos h2, #quem-somos h3 {
+	color: #2CBC62;
+	/*color: rgb(85,168,73);*/
+	text-align: left;
+}
+
+#quem-somos p {
+	color: #0a0a0a;
+	margin: 0;
+}
+
+.albuns {
 	padding: 10px 0px 10px 0px;
 }
 /* -- Seção SUBSISTEMAS -- */
-#subsistemas{
+#subsistemas {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	background-color: white;
+	text-align: center;
+}
+
+#subsistemas h1, h2, h3 {
+	text-align: center;
+}
+
+#subsistemas h2,#subsistemas h3{
+	color: #2CBC62;
+}
+
+#subsistemas p{
+	color: #0a0a0a;
+}
+
+#subsistemas img{
+	width: 150px;
+	height: 150px;
+}
+.caixa{
+	width: 100%;
+	height: 350px;
+	margin-bottom: 20px;
 }
 /* -- Seção COMPETIÇÃO -- */
-#competicao{
-	background: rgba(0,10,0,0.7);
+#competicao {
+	background: #2CBC62;
 	padding-top: 20px;
-	padding-bottom: 20px: 
+	padding-bottom: 20px; 
+	text-align: center;
 }
-#parceiros{
+
+#competicao h2,#competicao h3,#competicao p{
+	color: #fff;
+}
+
+/* -- Seção PARCEIROS -- */
+#parceiros {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-#contatos{
-	background: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-/* -- RODAPE -- */
-footer {
-	background: #000;
-	padding: 50px 0px 20px 0px;
-	position: relative;
-}
-
-
-/*================== Tipografia =============== */
-
-h1 {
-	font-size: 100px;
-	font-weight: 900;
-	letter-spacing: -0.05em;
-	margin-bottom: 50px;
-	color: #000000;
-}
-
-h2{
-	font-size: 50px;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-}
-
-h3{
-	font-size: 35px;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-}
-
-/* Text border */
-.borda-2px {
-	text-shadow:#000 1px -1px 2px,
-				#000 -1px 1px 2px,
-				#000 1px 1px 2px,
-				#000 -1px -1px 2px
-	}
-#quem-somos h2,#quem-somos h3{
-	color: #006400;
-}
-#quem-somos p {
-	font-size: 15px;
-}
-
-#subsistemas h2, #subsistemas h3{
-	color: #32CD32;
-}
-#subsistemas p {
-	font-size: 15px;
-	color: #fff;
-}
-
-#competicao h2,#competicao h3{
-	color: #006400;
-	text-shadow:#000 1px -1px 2px,
-				#000 -1px 1px 2px,
-				#000 1px 1px 2px,
-				#000 -1px -1px 2px
-}
-#competicao p {
-	font-size: 15px;
-	color: #fff;
-}
-
-#parceiros h2,#parceiros h3{
-	color: #006400;
-	text-shadow:#000 1px -1px 2px,
-				#000 -1px 1px 2px,
-				#000 1px 1px 2px,
-				#000 -1px -1px 2px
-}
 #parceiros p {
 	font-size: 20px;
 	color: #fff;
 }
 
-#contatos h2, #contatos h3 {
-	color: #32CD32;
+/* -- Seção CONTATOS -- */
+#contatos {
+	background: #2CBC62;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
+#contatos h2,#contatos h3,#contatos p{
+	color: #fff;
+}
+
+/* -- RODAPE -- */
+footer {
+	/*background: #000;*/
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+#rodape h5 {
+	text-align: center;
+	display: inline;
+}
+
+#rodape .nav {
+	display: inline-block;
+}
+
+
+/*================== Tipografia =============== */
+/* Fonts */
+/* Cores principais */
+/* #2CBC62 */
+/* #38EF7D */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat";
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+
+h1 {
+	/*font-size: 100px;*/
+	/*font-weight: 900;*/
+	letter-spacing: -0.05em;
+	/*margin-bottom: 50px;*/
+	color: #2CBC62;
+	font-size: 5em;
+}
+
+h2 {
+	color: #2CBC62;
+	font-size: 3em;
+	/*font-size: 50px;*/
+	/*font-weight: 700;*/
+	/*letter-spacing: -0.04em;*/
+}
+
+h3 {
+	font-size: 1.75em;
+	color: #2CBC62;
+	/*font-weight: 700;*/
+	/*letter-spacing: -0.04em;*/
+}
+
+h5 {
+	color: #2CBC62;
+}
+
+p {
+	color: #0a0a0a;
+	margin-bottom: 24px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+/* Text border */
+.borda-2px {
+	/*text-shadow:#000 1px -1px 2px,
+				#000 -1px 1px 2px,
+				#000 1px 1px 2px,
+				#000 -1px -1px 2px*/
+}
+
+.texto-capa h1 {
+	margin-bottom: 50px;
+}
+
+
