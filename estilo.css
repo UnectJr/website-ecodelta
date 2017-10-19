@@ -7,6 +7,9 @@
 
 /* --- body ---*/
 
+/** {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}*/
 
 html, body, .capa {
 	height: 100vh;
@@ -216,8 +219,43 @@ section {
 	background: white;
 }
 
+#contatos h2 {
+	margin-bottom: 0;
+}
+
 #contatos h2, #contatos h3, #contatos p {
 	color: #2CBC62;
+}
+
+#infocont{
+	/*list-style-position:inside;*/
+}
+
+.info {
+	/*margin-left: 10px;
+	margin-right: 10px;
+	width: 400px;
+	padding-left: 60px;*/
+	list-style-type: none;
+}
+
+#contatos .form {
+	color: #0a0a0a;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 450px;
+    border: 1px solid #999;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+#contatos .button {
+	margin-top: 10px;
 }
 
 /* -- RODAPE -- */
@@ -277,10 +315,11 @@ h5 {
 }
 
 p {
-	font-size: 1.20em;
+	font-size: 1.15em;
 	color: #0a0a0a;
 	font-weight: 300;
 	margin-bottom: 24px;
+
 }
 
 
