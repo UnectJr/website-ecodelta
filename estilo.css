@@ -7,17 +7,21 @@
 
 /* --- body ---*/
 
+/** {
+	border: 1px solid #2CBC62;
+}*/
 
 html, body, .capa {
-	height: 100%;
+	height: 100vh;
 }
 
+
 body {
-	background: url('imagens/capa.jpg');
+	/*background: url('imagens/capa.jpg');
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: 100%;*/
 	font-family: 'Raleway', sans-serif;
-	background-color: #195b7d;
+	/*background-color: #195b7d;*/
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -25,24 +29,28 @@ body {
 }
 
 /* --- Barra de Navegação ---*/
-.img-logo {
-	height: 40px;
+.navbar-brand {
 	width: 132px;
-	display: block;
-	background: url(imagens/logo.png) no-repeat;
+	height: 40px;
+	display: inline;
+	background: url(imagens/Logosemfundo.png) no-repeat;
 	background-size: contain;
 	color: transparent;
+	margin-top: 8px;
+	margin-left: 15px;
 }
 
-nav.navbar-transparente{
+nav.navbar-transparente {
 	padding: 15px 0px;
 	background: rgba(0, 0, 0, 0.7);
-	border: none; 
+	border: none;
 }
 
-.navbar-brand {
-		padding: 5px 15px;
+.navbar-header {
+	border: none;
 }
+
+
 
 .divisor {
 	width: 1px;
@@ -50,20 +58,30 @@ nav.navbar-transparente{
 	background: white;
 	margin: 16px 10px;
 }
+
 .navbar-inverse .navbar-nav>li>a {
 	color: white;
 }
+
 .navbar-inverse .navbar-nav>li>a:hover {
 	/*color: #00FF00;*/
 	color: #38ef7d;
 }
 
+section {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	overflow: hidden;
+}
+
 
 /* -- Imagem de capa -- */
 .capa {
+	background: url('imagens/capa.jpg');
+	background-attachment: fixed;
+	background-size: 100vw;
 	display: table;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	width: 98.8vw;
 }
 
 .texto-capa {
@@ -71,17 +89,18 @@ nav.navbar-transparente{
 	color: white;
 	display: table-cell;
 	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .texto-capa h1 {
 	background: linear-gradient(#11998e, #38ef7d);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	margin-bottom: 75px;
 }
 
 /* -- Botoes -- */
 .btn-custom {
-	color: white;
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
     -moz-border-radius: 500px;
@@ -89,6 +108,7 @@ nav.navbar-transparente{
     margin: 0px 15px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
+    color: white;
 }
 
 .btn-verde {
@@ -101,110 +121,107 @@ nav.navbar-transparente{
 }
 
 .btn-branco {
-	border: 2px solid white;
+	border: 1px solid white;
 }
 
 .btn-branco:hover {
-	background-color: white;
-	color: black;
+	background: white;
+	color: #2CBC62;
 }
 
 /* -- Seção QUEM-SOMOS -- */
 #quem-somos {
+	padding-top: 48px;
 	background-color: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	text-align: left;
 }
-
 
 #quem-somos h2, #quem-somos h3 {
 	color: #2CBC62;
-	/*color: rgb(85,168,73);*/
-	text-align: left;
 }
 
 #quem-somos p {
 	color: #0a0a0a;
-	margin: 0;
 }
 
 .albuns {
-	padding: 10px 0px 10px 0px;
+	padding-top: 34px;
 }
+
 /* -- Seção SUBSISTEMAS -- */
 #subsistemas {
-	padding-top: 20px;
-	padding-bottom: 20px;
 	background-color: white;
 	text-align: center;
 }
 
-#subsistemas h1, h2, h3 {
-	text-align: center;
+#subsistemas h2 {
+	padding-bottom: 24px;
+	padding-top: 24px; 
 }
 
-#subsistemas h2,#subsistemas h3{
+#subsistemas h2, #subsistemas h3 {
 	color: #2CBC62;
 }
 
-#subsistemas p{
+#subsistemas p {
 	color: #0a0a0a;
 }
 
-#subsistemas img{
-	width: 150px;
-	height: 150px;
+#subsistemas img {
+	width: 125px;
+	height: 125px;
+	margin: 10px;
 }
 
-#subsistemas img:hover{
-	width: 130px;
-	height: 130px;
-	transition: width 0.4s, height 0.4s;
-}
-
-.caixa{
+.caixa {
 	width: 100%;
 	height: 350px;
-	margin-bottom: 20px;
 }
+
 /* -- Seção COMPETIÇÃO -- */
 #competicao {
 	background: #2CBC62;
-	padding-top: 20px;
-	padding-bottom: 20px; 
-	text-align: center;
+	text-align: left;
 }
 
-#competicao h2,#competicao h3,#competicao p{
+#competicao h2, #competicao h3, #competicao p {
 	color: #fff;
 }
 
 /* -- Seção PARCEIROS -- */
 #parceiros {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background: #2CBC62;
+	text-align: center;
+}
+
+#parceiros h2, #parceiros h3 {
+	color: white;
+	margin-bottom: 48px;
 }
 
 #parceiros p {
-	font-size: 20px;
 	color: #fff;
+}
+
+#parceiros .empresa {
+	width: 125px;
+	height: 125px;
+	margin: 0 auto;
+	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* -- Seção CONTATOS -- */
 #contatos {
-	background: #2CBC62;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background: white;
 }
 
-#contatos h2,#contatos h3,#contatos p{
-	color: #fff;
+#contatos h2, #contatos h3, #contatos p {
+	color: #2CBC62;
 }
 
 /* -- RODAPE -- */
 footer {
-	/*background: #000;*/
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #0a0a0a;
 	padding: 50px 0px 20px 0px;
 	position: relative;
 }
@@ -222,20 +239,18 @@ footer {
 /*================== Tipografia =============== */
 /* Fonts */
 /* Cores principais */
-/* #2CBC62 */
+/* #2CBC62 - Cor principal */
 /* #38EF7D */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Montserrat";
 	font-weight: 400;
 	margin-bottom: 24px;
+	margin-top: 24px;
 }
 
 h1 {
-	/*font-size: 100px;*/
-	/*font-weight: 900;*/
 	letter-spacing: -0.05em;
-	/*margin-bottom: 50px;*/
 	color: #2CBC62;
 	font-size: 5em;
 }
@@ -243,31 +258,34 @@ h1 {
 h2 {
 	color: #2CBC62;
 	font-size: 3em;
-	/*font-size: 50px;*/
-	/*font-weight: 700;*/
-	/*letter-spacing: -0.04em;*/
 }
 
 h3 {
 	font-size: 1.75em;
 	color: #2CBC62;
-	/*font-weight: 700;*/
-	/*letter-spacing: -0.04em;*/
 }
 
 h5 {
-	color: #2CBC62;
+	/* Powered by Unect Jr.*/
+	color: rgb(64,128,255);
 }
 
 p {
+	font-size: 1.20em;
 	color: #0a0a0a;
+	font-weight: 300;
 	margin-bottom: 24px;
-	width: 70%;
-	margin: 0 auto;
 }
 
-.texto-capa h1 {
-	margin-bottom: 50px;
+
+/* Text border */
+.borda-2px {
+	/*text-shadow:#000 1px -1px 2px,
+				#000 -1px 1px 2px,
+				#000 1px 1px 2px,
+				#000 -1px -1px 2px*/
 }
+
+
 
 
