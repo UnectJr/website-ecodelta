@@ -7,9 +7,7 @@
 
 /* --- body ---*/
 
-/** {
-	border: 1px solid rgba(0, 0, 0, 0.3);
-}*/
+
 
 html, body, .capa {
 	height: 100vh;
@@ -17,11 +15,7 @@ html, body, .capa {
 
 
 body {
-	/*background: url('imagens/capa.jpg');
-	background-attachment: fixed;
-	background-size: 100%;*/
 	font-family: 'Raleway', sans-serif;
-	/*background-color: #195b7d;*/
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -29,28 +23,27 @@ body {
 }
 
 /* --- Barra de Navegação ---*/
+
+
 .navbar-brand {
 	width: 132px;
 	height: 40px;
-	display: inline;
+	display: inline-block;
 	background: url(imagens/Logosemfundo.png) no-repeat;
 	background-size: contain;
-	color: transparent;
 	margin-top: 8px;
 	margin-left: 15px;
 }
 
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: rgba(0, 0, 0, 0.7);
+	background-color: #1B1B1B;
 	border: none;
 }
 
 .navbar-header {
 	border: none;
 }
-
-
 
 .divisor {
 	width: 1px;
@@ -64,9 +57,14 @@ nav.navbar-transparente {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-	/*color: #00FF00;*/
 	color: #38ef7d;
 }
+
+#barra-navegacao li a {
+	transition-delay: 0s;
+}
+
+/* Section */
 
 section {
 	padding-top: 24px;
@@ -76,12 +74,22 @@ section {
 
 
 /* -- Imagem de capa -- */
+
+@media all and (min-width: 1200px) {
+	.capa {
+		background: url('imagens/capa.jpg');
+		background-attachment: fixed;
+		background-size: 100vw;
+		display: table;
+		width: 98.8vw;
+	}	
+}
+
 .capa {
-	background: url('imagens/capa.jpg');
-	background-attachment: fixed;
-	background-size: 100vw;
 	display: table;
-	width: 98.8vw;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	overflow: hidden;
 }
 
 .texto-capa {
@@ -89,7 +97,7 @@ section {
 	color: white;
 	display: table-cell;
 	vertical-align: middle;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .texto-capa h1 {
@@ -105,7 +113,7 @@ section {
 	-webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     padding: 10px 35px;
-    margin: 0px 15px;
+    margin: 5px 15px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
     color: white;
@@ -141,15 +149,11 @@ section {
 }
 
 #quem-somos p {
-	color: #0a0a0a;
+	color: #1b1b1b;
 }
 
 #quem-somos .img-responsive {
 	padding-top: 24px;
-}
-
-.albuns {
-	padding-top: 34px;
 }
 
 /* -- Seção SUBSISTEMAS -- */
@@ -168,12 +172,13 @@ section {
 }
 
 #subsistemas p {
-	color: #0a0a0a;
+	color: #1B1B1B;
+	margin: 0 auto;
 }
 
 #subsistemas img {
-	width: 125px;
-	height: 125px;
+	width: 25%;
+	height: 25%
 	margin: 10px;
 }
 
@@ -192,6 +197,10 @@ section {
 	color: #fff;
 }
 
+#competicao .img-responsive {
+	padding-top: 24px;
+}
+
 /* -- Seção PARCEIROS -- */
 #parceiros {
 	background: #2CBC62;
@@ -201,10 +210,6 @@ section {
 #parceiros h2, #parceiros h3 {
 	color: white;
 	margin-bottom: 48px;
-}
-
-#parceiros p {
-	color: #fff;
 }
 
 #parceiros .empresa {
@@ -217,35 +222,34 @@ section {
 /* -- Seção CONTATOS -- */
 #contatos {
 	background: white;
+	margin-bottom: 48px;
 }
 
 #contatos h2 {
 	margin-bottom: 0;
 }
 
-#contatos h2, #contatos h3, #contatos p {
+#contatos h2, #contatos h3 {
 	color: #2CBC62;
 }
 
-#infocont{
-	/*list-style-position:inside;*/
+#contatos p {
+	color: #1B1B1B;
 }
 
+
+
 .info {
-	/*margin-left: 10px;
-	margin-right: 10px;
-	width: 400px;
-	padding-left: 60px;*/
 	list-style-type: none;
 }
 
 #contatos .form {
-	color: #0a0a0a;
+	color: #1B1B1B;
 }
 
 input, textarea {
     font: 1em sans-serif;
-    width: 450px;
+    width: 80%;
     border: 1px solid #999;
 }
 
@@ -258,26 +262,86 @@ textarea {
 	margin-top: 10px;
 }
 
+#contatos .form {
+	color: #1B1B1B;
+}
+
 /* -- RODAPE -- */
-footer {
-	background-color: #0a0a0a;
-	padding: 50px 0px 20px 0px;
-	position: relative;
+
+#myFooter {
+    background-color: #1b1b1b;
+    color: white;
+    padding-top: 48px;
 }
 
-#rodape h5 {
-	text-align: center;
-	display: inline;
+#myFooter .footer-copyright {
+    background-color: #1b1b1b;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
 }
 
-#rodape .unect {
-	color: rgb(64, 128, 255);
+#myFooter .row {
+    margin-bottom: 48px;
 }
 
-#rodape .nav {
-	display: inline-block;
+#myFooter .footer-copyright p {
+  	padding: 10px;
+ 	color: white;
+ 	width: 100%;
 }
 
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h2 {
+	background: linear-gradient(#11998e, #38ef7d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+}
+
+#myFooter h5 {
+    font-size: 16px;
+    color: white;
+    margin-top: 30px;
+}
+
+#myFooter h2 a {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;  
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
 
 /*================== Tipografia =============== */
 /* Fonts */
@@ -290,6 +354,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	margin-bottom: 24px;
 	margin-top: 24px;
+}
+
+li, a {
+	font-family: "Montserrat";
+	font-size: 16px;
 }
 
 h1 {
@@ -316,21 +385,28 @@ h5 {
 
 p {
 	font-size: 1.15em;
-	color: #0a0a0a;
-	font-weight: 300;
+	color: #1b1b1b;
+	font-weight: 200;
 	margin-bottom: 24px;
-
 }
 
+/* Media queries */
 
-/* Text border */
-.borda-2px {
-	/*text-shadow:#000 1px -1px 2px,
-				#000 -1px 1px 2px,
-				#000 1px 1px 2px,
-				#000 -1px -1px 2px*/
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
 }
 
+@media all and (min-width: 1000px) {
+	p {
+		width: 80%;
+	}
+
+	#subsistemas p {
+		margin: 0 auto;
+	}
+}
 
 
 
