@@ -336,6 +336,23 @@ textarea {
     text-decoration: none;
 }
 
+/* Footer media queries */
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 1000px) {
+	p {
+		width: 80%;
+	}
+
+	#subsistemas p {
+		margin: 0 auto;
+	}
+}
+
 
 /*================== Tipografia =============== */
 /* Fonts */
