@@ -143,15 +143,11 @@ section {
 }
 
 #quem-somos p {
-	color: #0a0a0a;
+	color: #1B1B1B;
 }
 
 #quem-somos .img-responsive {
 	padding-top: 24px;
-}
-
-.albuns {
-	padding-top: 34px;
 }
 
 /* -- Seção SUBSISTEMAS -- */
@@ -170,12 +166,12 @@ section {
 }
 
 #subsistemas p {
-	color: #0a0a0a;
+	color: #1B1B1B;
 }
 
 #subsistemas img {
-	width: 125px;
-	height: 125px;
+	width: 25%;
+	height: 25%;
 	margin: 10px;
 }
 
@@ -194,6 +190,10 @@ section {
 	color: #fff;
 }
 
+#competicao .img-responsive {
+	padding-top: 24px;
+}
+
 /* -- Seção PARCEIROS -- */
 #parceiros {
 	background: #2CBC62;
@@ -203,10 +203,6 @@ section {
 #parceiros h2, #parceiros h3 {
 	color: white;
 	margin-bottom: 48px;
-}
-
-#parceiros p {
-	color: #fff;
 }
 
 #parceiros .empresa {
@@ -219,6 +215,7 @@ section {
 /* -- Seção CONTATOS -- */
 #contatos {
 	background: white;
+	margin-bottom: 48px;
 }
 
 #contatos h2 {
@@ -229,20 +226,16 @@ section {
 	color: #2CBC62;
 }
 
-#infocont{
-	/*list-style-position:inside;*/
+#contatos p {
+	color: #1B1B1B;
 }
 
 .info {
-	/*margin-left: 10px;
-	margin-right: 10px;
-	width: 400px;
-	padding-left: 60px;*/
 	list-style-type: none;
 }
 
 #contatos .form {
-	color: #0a0a0a;
+	color: #1B1B1B;
 }
 
 input, textarea {
@@ -258,6 +251,10 @@ textarea {
 
 #contatos .button {
 	margin-top: 10px;
+}
+
+#contatos .form {
+	color: #1B1B1B;
 }
 
 /* -- RODAPE -- */
