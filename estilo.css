@@ -261,23 +261,79 @@ textarea {
 }
 
 /* -- RODAPE -- */
-footer {
-	background-color: #0a0a0a;
-	padding: 50px 0px 20px 0px;
-	position: relative;
+#myFooter {
+    background-color: #1b1b1b;
+    color: white;
+    padding-top: 48px;
 }
 
-#rodape h5 {
-	text-align: center;
-	display: inline;
+#myFooter .footer-copyright {
+    background-color: #1b1b1b;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
 }
 
-#rodape .unect {
-	color: rgb(64, 128, 255);
+#myFooter .row {
+    margin-bottom: 48px;
 }
 
-#rodape .nav {
-	display: inline-block;
+#myFooter .footer-copyright p {
+  	padding: 10px;
+ 	color: white;
+ 	width: 100%;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h2 {
+	background: linear-gradient(#11998e, #38ef7d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+}
+
+#myFooter h5 {
+    font-size: 16px;
+    color: white;
+    margin-top: 30px;
+}
+
+#myFooter h2 a {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;  
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
 }
 
 
