@@ -38,7 +38,7 @@ body {
 
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: #1B1B1B;
+	background: rgba(0, 0, 0, 0.7);
 	border: none;
 }
 
@@ -55,6 +55,7 @@ nav.navbar-transparente {
 
 .navbar-inverse .navbar-nav>li>a {
 	color: white;
+	outline: 0;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -211,6 +212,17 @@ section {
 	margin: 0 auto;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 }
+/* -- Equipe-- */
+
+#carrocel {
+	background: #2CBC62;
+	text-align: center;
+}
+
+#carrocel h2{
+	color: white;
+}
+
 
 /* -- Seção CONTATOS -- */
 #contatos {
@@ -308,9 +320,12 @@ textarea {
 #myFooter a {
     color: #d2d1d1;
     text-decoration: none;
+    outline: 0;
 }
 
-#myFooter a:hover,
+#myFooter a:hover{
+	color: #38ef7d
+}
 #myFooter a:focus {
     text-decoration: none;
     color: white;
@@ -326,6 +341,7 @@ textarea {
     color: white;
     padding: 10px;
     transition: 0.2s;
+    
 }
 
 #myFooter .social-networks a:hover {
