@@ -10,6 +10,8 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owl/dist/assets/owl.theme.default.min.css">
     <link href="estilo.css" rel="stylesheet">
 
     <!-- Google fonts -->
@@ -66,8 +68,8 @@
     <div class="capa">
       <div class="texto-capa">
         <h1> Faça parte do futuro </h1>
-        <a href="" class="btn btn-custom btn-branco btn-lg"> Subsistemas </a>
-        <a href="" class="btn btn-custom btn-branco btn-lg"> Competição </a>
+        <a href="#subsistemas" class="btn btn-custom btn-branco btn-lg"> Subsistemas </a>
+        <a href="#competicao" class="btn btn-custom btn-branco btn-lg"> Competição </a>
       </div>
     </div>
 
@@ -84,10 +86,6 @@
             <h2>O que é a Eco-Delta?</h2>
             <p>EcoDelta é um projeto de extensão desenvolvido por alunos dos cursos de engenharia da Universidade Tecnológica Federal do Paraná (UTFPR) - Campus Cornélio Procópio, e orientado por professores da instituição, desde o início de 2017.
             O objetivo é desenvolver um carro com uma maior eficiência energética, utilizando a gasolina como combustível, e então participar das principais competições, voltadas à pesquisa energética, que estimulam estudantes a projetar e construir protótipos que percorrem a maior distância com a menor quantidade de combustível.</p>
-            <h3>Mais conteúdo</h3>
-            <p>Ut vitae tellus bibendum urna pretium commodo ac non arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam in venenatis lacus.</p> 
-            <h3>Conteúdo</h3>
-            <p>Ut non arcu et odio placerat iaculis eget et odio. Praesent bibendum iaculis enim at tristique. In tincidunt egestas ex, eu aliquam arcu lacinia aliquet. Nulla lacinia dapibus sapien, in mattis magna pharetra varius. Fusce neque orci, sagittis non consequat et, hendrerit ac lacus</p>
           </div>
        
         </div>
@@ -106,7 +104,7 @@
 
             <h3 >Sobre a competição</h3>
             <p>As equipes participantes terão três dias para aperfeiçoar seus veículos, passar na inspeção técnica e, finalmente, testar seus protótipos na pista, a fim de obter marcas válidas para entrar na briga pelo primeiro lugar nas categorias Gasolina, Etanol e Bateria elétrica.</p>
-            <!--
+            
             <h3 >Regulamento</h3>
             <p>A Shell Eco-marathon Brasil contempla o seguinte regulamento: o Capítulo I de regras globais da Shell Eco-maraton 2017 e o Capítulo II, com informações de logística específicas sobre a competição Brasil.</p>
             <a href="http://www.shell.com.br/energia-e-inovacao/ecomarathon/shell-eco-marathon-brasil/_jcr_content/par/textimage.stream/1501275426166/66520995b602d9f78fc58532c2f127809acda140c70847f1039e6e29f05b4cf4/sem-2017-rules-chapter-1.pdf"><p>baixe o regulamento</p></a>
@@ -115,7 +113,7 @@
 
             <h3>Local do evento</h3>
             <p>A disputa de eficiência energética será realizada no Centro de Convenções Riocentro, na Barra da Tijuca, Rio de Janeiro.</p>
-            -->
+           
           </div>
           <div class="col-md-6">
           <!-- Colocar uma imagem da competição -->
@@ -221,26 +219,8 @@
       </div>
     </section> 
     <!--- /PARCEIROS -->
-
+    
     <!--- CONTATOS -->
-    <!--
-    <section id="contatos">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Contatos</h2>
-            <h3>BANNER COM OS CONTATOS</h3>
-            <p> só imagens e logo sao necessárias</p>
-          </div>
-          <div class="col-md-6">
-            <h3>um imput pra envio de email </h3>
-            <p>descrição de horarios de atentimento/contato</p>
-          </div>
-        </div>
-        
-      </div>
-    </section> -->
-    <!--- /CONTATOS -->
     <section id="contatos">
       <div class="container">
         <div class="row">
@@ -280,6 +260,30 @@
       </div>
     </section>
 
+	<!--- /CONTATOS -->
+	
+	
+	   
+	 <section id="carrocel">
+      <div class="container">
+        <div class="row">
+        	<h2> Equipe</h2>
+          <div class="owl-carousel owl-theme">
+                <div class="item"><img src="imagens/integrantes/img1.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img2.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img3.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img4.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img5.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img6.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img7.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img8.jpeg" alt=""></div>
+                <div class="item"><img src="imagens/integrantes/img9.jpeg" alt=""></div>               
+            </div>
+        </div>        
+      </div>
+    </section>
+	
+	
     <!-- Rodapé -->
     <footer id="myFooter">
       <div class="container">
@@ -302,11 +306,13 @@
               <li><a href="http://www.shell.com.br/energia-e-inovacao/ecomarathon/shell-eco-marathon-brasil/_jcr_content/par/textimage.stream/1501275426166/66520995b602d9f78fc58532c2f127809acda140c70847f1039e6e29f05b4cf4/sem-2017-rules-chapter-1.pdf" target="_Blank">Regulamento</a></li>
             </ul>
           </div>
+
           
           <div class="col-sm-2">
             <h5>Apoio</h5>
             <ul>
-              <li><a href="#">Unect Jr.</a></li>
+              <li><a href="http://www.unect.com.br/" target="_Blank">Unect Jr.</a></li>
+
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
             </ul>
@@ -327,8 +333,35 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="lib/owl/dist/owl.carousel.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+		    $('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:true,
+		    navText:["anterior","proximo"],
+		    autoplay:true,
+		    autoplayTimeout:1000,
+		    autoplayHoverPause:true,
+
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:3
+		        },
+		        1000:{
+		            items:4
+		        }
+		        
+		    }
+		})
+    
+    
+    </script>
   </body>
 </html>
