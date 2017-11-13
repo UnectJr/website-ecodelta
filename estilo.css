@@ -38,7 +38,7 @@ body {
 
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: rgba(0, 0, 0, 0.7);
+	background: #1B1B1B;
 	border: none;
 }
 
@@ -285,6 +285,7 @@ textarea {
 
 #myFooter .row {
     margin-bottom: 48px;
+
 }
 
 #myFooter .footer-copyright p {
@@ -347,6 +348,7 @@ textarea {
 #myFooter .social-networks a:hover {
     text-decoration: none;
 }
+
 
 /* Footer media queries */
 @media screen and (max-width: 767px) {
