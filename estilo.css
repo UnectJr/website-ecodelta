@@ -63,11 +63,14 @@ nav.navbar-transparente {
 }
 
 section {
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	overflow: hidden;
 }
 
+#capa {
+	padding-bottom: 0px;
+}
 
 /* -- Imagem de capa -- */
 @media all and (min-width: 1200px) {
@@ -83,7 +86,6 @@ section {
 .capa {
 	display: table;
 	background-color: rgba(0, 0, 0, 0.7);
-
 	overflow: hidden;
 }
 
@@ -134,7 +136,6 @@ section {
 
 /* -- Seção QUEM-SOMOS -- */
 #quem-somos {
-	padding-top: 48px;
 	background-color: white;
 	text-align: left;
 }
@@ -219,10 +220,10 @@ section {
 	text-align: center;
 }
 
-#carrocel h2{
+#carrocel h2 {
 	color: white;
+	margin-bottom: 48px;
 }
-
 
 /* -- Seção CONTATOS -- */
 #contatos {
@@ -285,7 +286,6 @@ textarea {
 
 #myFooter .row {
     margin-bottom: 48px;
-
 }
 
 #myFooter .footer-copyright p {
@@ -342,7 +342,6 @@ textarea {
     color: white;
     padding: 10px;
     transition: 0.2s;
-    
 }
 
 #myFooter .social-networks a:hover {
