@@ -26,6 +26,33 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
   </head>
 
   <body>
@@ -47,7 +74,7 @@
             <span class="icon-bar"></span>
           </button> 
 
-          <a href="index.html" class="navbar-brand">
+          <a href="#capa" class="navbar-brand">
             <!--<span class="img-logo"></span>-->
           </a>
         </div>
@@ -56,7 +83,7 @@
         <!-- navbar -->
         <div class="collapse navbar-collapse" id="barra-navegacao">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Início</a></li>
+            <li><a href="#capa">Início</a></li>
             <li><a href="#quem-somos">Quem Somos</a></li>
             <li><a href="#competicao">Competição</a></li>
             <li class="divisor" role="separator"></li>
@@ -68,14 +95,15 @@
       </div><!-- /container -->
     </nav><!-- /nav -->
 
-    <div class="capa">
-      <div class="texto-capa">
-        <h1> Faça parte do futuro </h1>
-        <a href="#subsistemas" class="btn btn-custom btn-branco btn-lg"> Subsistemas </a>
-        <a href="#competicao" class="btn btn-custom btn-branco btn-lg"> Competição </a>
+    <section id="capa">
+      <div class="capa">
+        <div class="texto-capa">
+          <h1> Faça parte do futuro </h1>
+          <a href="#subsistemas" class="btn btn-custom btn-branco btn-lg"> Subsistemas </a>
+          <a href="#competicao" class="btn btn-custom btn-branco btn-lg"> Competição </a>
+        </div>
       </div>
-    </div>
-
+    </section>
     <!-- Conteúdos -->
     <!--- QUEM SOMOS -->
     <section id="quem-somos">
