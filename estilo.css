@@ -79,7 +79,7 @@ section {
 		background-attachment: fixed;
 		background-size: 100vw;
 		display: table;
-		width: 98.8vw;
+		width: 100vw;
 	}	
 }
 
@@ -87,6 +87,7 @@ section {
 	display: table;
 	background-color: rgba(0, 0, 0, 0.7);
 	overflow: hidden;
+	width: 100vw;
 }
 
 .texto-capa {
@@ -146,6 +147,7 @@ section {
 
 #quem-somos p {
 	color: #1B1B1B;
+	padding-bottom: 24px; 
 }
 
 #quem-somos .img-responsive {
@@ -160,7 +162,6 @@ section {
 
 #subsistemas h2 {
 	padding-bottom: 24px;
-	padding-top: 24px; 
 }
 
 #subsistemas h2, #subsistemas h3 {
@@ -247,10 +248,6 @@ section {
 	list-style-type: none;
 }
 
-#contatos .form {
-	color: #1B1B1B;
-}
-
 input, textarea {
     font: 1em sans-serif;
     width: 450px;
@@ -263,7 +260,10 @@ textarea {
 }
 
 #contatos .button {
-	margin-top: 10px;
+	border: 1px solid #999;
+	width: 150px;
+	text-align: center;
+	border-radius: 3px;
 }
 
 #contatos .form {
@@ -375,9 +375,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Montserrat";
-	font-weight: 400;
-	margin-bottom: 24px;
-	margin-top: 24px;
+	font-weight: 400;	
 }
 
 h1 {
@@ -406,8 +404,7 @@ p {
 	font-size: 1.15em;
 	color: #0a0a0a;
 	font-weight: 300;
-	margin-bottom: 24px;
-
+	line-height: 1.725em;
 }
 
 
