@@ -91,6 +91,7 @@ section {
 		background-size: 100vw;
 		display: table;
 		width: 100vw;
+		background-repeat: no-repeat;
 	}	
 }
 
