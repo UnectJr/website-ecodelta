@@ -11,6 +11,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.3);
 }*/
 
+
 html, body, .capa {
 	height: 100vh;
 }
@@ -25,7 +26,7 @@ body {
 }
 
 /* --- Barra de Navegação ---*/
-.navbar-brand {
+/*.navbar-brand {
 	width: 132px;
 	height: 40px;
 	display: inline;
@@ -34,7 +35,17 @@ body {
 	color: transparent;
 	margin-top: 8px;
 	margin-left: 15px;
+}*/
+
+/*.navbar-brand {
+	border: 1px solid blue;
+	
 }
+
+.navbar-brand img {
+	border: 1px solid red;
+}*/
+
 
 nav.navbar-transparente {
 	padding: 15px 0px;
@@ -63,11 +74,14 @@ nav.navbar-transparente {
 }
 
 section {
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 72px;
+	padding-bottom: 72px;
 	overflow: hidden;
 }
 
+#capa {
+	padding-bottom: 0px;
+}
 
 /* -- Imagem de capa -- */
 @media all and (min-width: 1200px) {
@@ -76,15 +90,16 @@ section {
 		background-attachment: fixed;
 		background-size: 100vw;
 		display: table;
-		width: 98.8vw;
+		width: 100vw;
+		background-repeat: no-repeat;
 	}	
 }
 
 .capa {
 	display: table;
 	background-color: rgba(0, 0, 0, 0.7);
-
 	overflow: hidden;
+	width: 100vw;
 }
 
 .texto-capa {
@@ -99,7 +114,24 @@ section {
 	background: linear-gradient(#11998e, #38ef7d);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	margin-bottom: 75px;
+	-webkit-touch-callout: none;
+  	-webkit-user-select: none;
+   	-khtml-user-select: none;
+   	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+	margin: 0 auto;
+}
+
+span {
+  border-right: .05em solid #fff;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* -- Botoes -- */
@@ -134,13 +166,13 @@ section {
 
 /* -- Seção QUEM-SOMOS -- */
 #quem-somos {
-	padding-top: 48px;
 	background-color: white;
 	text-align: left;
 }
 
-#quem-somos h2, #quem-somos h3 {
+#quem-somos h2, #quem-somos  {
 	color: #2CBC62;
+	margin-top: 0px;
 }
 
 #quem-somos p {
@@ -155,11 +187,12 @@ section {
 #subsistemas {
 	background-color: white;
 	text-align: center;
+	padding-bottom: 36px;
 }
 
 #subsistemas h2 {
 	padding-bottom: 24px;
-	padding-top: 24px; 
+	margin-top: 0px;
 }
 
 #subsistemas h2, #subsistemas h3 {
@@ -178,21 +211,23 @@ section {
 
 .caixa {
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 24px;
 }
 
 /* -- Seção COMPETIÇÃO -- */
 #competicao {
 	background: #2CBC62;
 	text-align: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#competicao h2 {
+	margin-top: 0px;
 }
 
 #competicao h2, #competicao h3, #competicao p {
 	color: #fff;
-}
-
-#competicao .img-responsive {
-	padding-top: 24px;
 }
 
 /* -- Seção PARCEIROS -- */
@@ -201,12 +236,20 @@ section {
 	text-align: center;
 }
 
-#parceiros h2, #parceiros h3 {
-	color: white;
-	margin-bottom: 48px;
+#parceiros h2 {
+	margin-top: 0px;
+	padding-bottom: 24px;
 }
 
-#parceiros .empresa {
+#parceiros h3 {
+	margin-bottom: 0px;
+}
+
+#parceiros h2, #parceiros h3 {
+	color: white;
+}
+
+#parceiros .empresa img {
 	width: 125px;
 	height: 125px;
 	margin: 0 auto;
@@ -215,39 +258,36 @@ section {
 /* -- Equipe-- */
 
 #carrocel {
-	background: #2CBC62;
+	background: #FFF;
 	text-align: center;
 }
 
-#carrocel h2{
-	color: white;
+#carrocel h2 {
+	color: #2CBC62;
+	padding-bottom: 24px;
+	margin-top: 0;
 }
-
 
 /* -- Seção CONTATOS -- */
 #contatos {
-	background: white;
-	margin-bottom: 48px;
+	background: #2CBC62;
 }
 
 #contatos h2 {
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 #contatos h2, #contatos h3, #contatos p {
-	color: #2CBC62;
+	color: #FFF;
 }
 
 #contatos p {
-	color: #1B1B1B;
+	color: #FFF;
 }
 
 .info {
 	list-style-type: none;
-}
-
-#contatos .form {
-	color: #1B1B1B;
 }
 
 input, textarea {
@@ -262,7 +302,10 @@ textarea {
 }
 
 #contatos .button {
-	margin-top: 10px;
+	border: 1px solid #999;
+	width: 150px;
+	text-align: center;
+	border-radius: 3px;
 }
 
 #contatos .form {
@@ -270,87 +313,110 @@ textarea {
 }
 
 /* -- RODAPE -- */
+
 #myFooter {
     background-color: #1b1b1b;
     color: white;
-    padding-top: 48px;
-}
-
-#myFooter .footer-copyright {
-    background-color: #1b1b1b;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    text-align: center;
 }
 
 #myFooter .row {
-    margin-bottom: 48px;
-
+    margin-bottom: 60px;
 }
 
-#myFooter .footer-copyright p {
-  	padding: 10px;
- 	color: white;
- 	width: 100%;
+#myFooter .info{
+    text-align: justify; 
+    color: #afb0b1;
 }
+
 #myFooter ul {
     list-style-type: none;
     padding-left: 0;
     line-height: 1.7;
 }
 
-#myFooter h2 {
-	background: linear-gradient(#11998e, #38ef7d);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin: 0;
-}
 
 #myFooter h5 {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
+    font-weight: bold;
     margin-top: 30px;
 }
 
-#myFooter h2 a {
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
+#myFooter .logo {
+    margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a{
+	background: linear-gradient(#11998e, #38ef7d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
 }
 
 #myFooter a {
     color: #d2d1d1;
     text-decoration: none;
-    outline: 0;
 }
 
-#myFooter a:hover{
-	color: #38ef7d
-}
+#myFooter a:hover,
 #myFooter a:focus {
     text-decoration: none;
-    color: white;
+    color: #38ef7d;
 }
 
-#myFooter .social-networks {
+#myFooter .second-bar {
     text-align: center;
-    padding-top: 30px;  
+    background-color: #1b1b1b;
+    text-align: center;
 }
 
-#myFooter .social-networks a {
-    font-size: 32px;
-    color: white;
+#myFooter .second-bar a {
+    font-size: 22px;
+    color: #9fa3a9;
     padding: 10px;
     transition: 0.2s;
-    
+    line-height: 68px;
 }
 
-#myFooter .social-networks a:hover {
+#myFooter .second-bar a:hover {
     text-decoration: none;
+}
+
+#myFooter .social-icons {
+    float:right;
+}
+
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .instagram:hover {
+    color: #e95950;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+
+    #myFooter .info{
+        text-align: center;
+    }
 }
 
 
 /* Footer media queries */
+/*
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;
@@ -365,7 +431,7 @@ textarea {
 	#subsistemas p {
 		margin: 0 auto;
 	}
-}
+}*/
 
 
 /*================== Tipografia =============== */
@@ -376,9 +442,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Montserrat";
-	font-weight: 400;
-	margin-bottom: 24px;
-	margin-top: 24px;
+	font-weight: 400;	
 }
 
 h1 {
@@ -407,8 +471,45 @@ p {
 	font-size: 1.15em;
 	color: #0a0a0a;
 	font-weight: 300;
-	margin-bottom: 24px;
+	line-height: 1.725em;
+}
 
+/* Media query for navbar collapsing */
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }
 
 
