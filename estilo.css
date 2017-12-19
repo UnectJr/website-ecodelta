@@ -25,31 +25,16 @@ body {
 	line-height: 1.4;
 }
 
-/* --- Barra de Navegação ---*/
-/*.navbar-brand {
-	width: 132px;
-	height: 40px;
-	display: inline;
-	background: url(imagens/Logosemfundo.png) no-repeat;
-	background-size: contain;
-	color: transparent;
-	margin-top: 8px;
-	margin-left: 15px;
-}*/
-
-/*.navbar-brand {
-	border: 1px solid blue;
-	
+section {
+	padding-top: 72px;
+	padding-bottom: 72px;
+	overflow: hidden;
 }
 
-.navbar-brand img {
-	border: 1px solid red;
-}*/
-
-
+/* --- Barra de Navegação ---*/
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: #1B1B1B;
+	background: #1b1b1b;
 	border: none;
 }
 
@@ -73,12 +58,7 @@ nav.navbar-transparente {
 	color: #38ef7d;
 }
 
-section {
-	padding-top: 72px;
-	padding-bottom: 72px;
-	overflow: hidden;
-}
-
+/* Capa */
 #capa {
 	padding-bottom: 0px;
 }
@@ -134,7 +114,7 @@ span {
   }
 }
 
-/* -- Botoes -- */
+/* Botoes */
 .btn-custom {
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
@@ -164,7 +144,7 @@ span {
 	color: #2CBC62;
 }
 
-/* -- Seção QUEM-SOMOS -- */
+/* Seção QUEM-SOMOS */
 #quem-somos {
 	background-color: white;
 	text-align: left;
@@ -183,7 +163,7 @@ span {
 	padding-top: 24px;
 }
 
-/* -- Seção SUBSISTEMAS -- */
+/* Seção SUBSISTEMAS */
 #subsistemas {
 	background-color: white;
 	text-align: center;
@@ -214,7 +194,7 @@ span {
 	padding-bottom: 24px;
 }
 
-/* -- Seção COMPETIÇÃO -- */
+/* COMPETIÇÃO */
 #competicao {
 	background: #2CBC62;
 	text-align: left;
@@ -230,7 +210,7 @@ span {
 	color: #fff;
 }
 
-/* -- Seção PARCEIROS -- */
+/* PARCEIROS */
 #parceiros {
 	background: #2CBC62;
 	text-align: center;
@@ -255,7 +235,7 @@ span {
 	margin: 0 auto;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* -- Equipe-- */
+/* Equipe */
 
 #carrocel {
 	background: #FFF;
@@ -268,7 +248,7 @@ span {
 	margin-top: 0;
 }
 
-/* -- Seção CONTATOS -- */
+/* CONTATOS */
 #contatos {
 	background: #2CBC62;
 }
@@ -301,11 +281,21 @@ textarea {
     height: 5em;
 }
 
-#contatos .button {
+#contatos .enviar {
 	border: 1px solid #999;
-	width: 150px;
 	text-align: center;
 	border-radius: 3px;
+	background-color: #fff;
+}
+
+#contatos .enviar:hover {
+	background-color: #404040;
+	border-color: #404040;
+}
+
+#contatos .enviar p {
+	color: #2CBC62;
+	text-align: center;
 }
 
 #contatos .form {
@@ -313,7 +303,6 @@ textarea {
 }
 
 /* -- RODAPE -- */
-
 #myFooter {
     background-color: #1b1b1b;
     color: white;
@@ -391,7 +380,6 @@ textarea {
     float:right;
 }
 
-
 #myFooter .facebook:hover {
     color: #0077e2;
 }
@@ -413,26 +401,6 @@ textarea {
         text-align: center;
     }
 }
-
-
-/* Footer media queries */
-/*
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-}
-
-@media all and (min-width: 1000px) {
-	p {
-		width: 80%;
-	}
-
-	#subsistemas p {
-		margin: 0 auto;
-	}
-}*/
-
 
 /*================== Tipografia =============== */
 /* Fonts */
@@ -462,8 +430,6 @@ h3 {
 }
 
 h5 {
-	/* Powered by Unect Jr.*/
-	/*color: rgb(64,128,255);*/
 	color: white;
 }
 
