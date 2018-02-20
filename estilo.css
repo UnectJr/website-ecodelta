@@ -163,6 +163,28 @@ span {
 	padding-top: 24px;
 }
 
+/* COMPETIÇÃO */
+#competicao {
+	background: #2CBC62;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#competicao h2 {
+	margin-top: 0px;
+}
+
+#competicao h2, #competicao h3, #competicao p {
+	color: #fff;
+}
+
+@media all and (max-width: 1000px) {
+	#quem-somos, #competicao {
+		text-align: center;
+	}
+}
+
 /* Seção SUBSISTEMAS */
 #subsistemas {
 	background-color: white;
@@ -194,22 +216,6 @@ span {
 	padding-bottom: 24px;
 }
 
-/* COMPETIÇÃO */
-#competicao {
-	background: #2CBC62;
-	text-align: left;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
-#competicao h2 {
-	margin-top: 0px;
-}
-
-#competicao h2, #competicao h3, #competicao p {
-	color: #fff;
-}
-
 /* PARCEIROS */
 #parceiros {
 	background: #2CBC62;
@@ -233,8 +239,19 @@ span {
 	width: 125px;
 	height: 125px;
 	margin: 0 auto;
-	border: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+#parceiros .conticola img {
+	width: 250px;
+	height: 125px;
+}
+
+@media screen and (max-width: 769px) {
+	#parceiros .empresas {
+		padding-bottom: 20px;
+	}
+}
+
 /* Equipe */
 
 #carrocel {
@@ -301,6 +318,12 @@ textarea {
 #contatos .form {
 	color: #1B1B1B;
 }
+
+@media all and (max-width: 1000px) {
+	#contatos {
+		text-align: center;
+	}
+} 
 
 /* -- RODAPE -- */
 #myFooter {
