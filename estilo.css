@@ -1,21 +1,6 @@
-/*
-*
-*@author Gardheam Santos
-*@version 0.1
-*/
-/* ================== Layout ================= */
-
-/* --- body ---*/
-
-/** {
-	border: 1px solid rgba(0, 0, 0, 0.3);
-}*/
-
-
 html, body, .capa {
 	height: 100vh;
 }
-
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -387,12 +372,18 @@ textarea {
     text-align: center;
 }
 
-#myFooter .second-bar a {
-    font-size: 22px;
-    color: #9fa3a9;
+#myFooter .second-bar a, #contatos a {
+    font-size: 25px;
     padding: 10px;
     transition: 0.2s;
     line-height: 68px;
+}
+#myFooter .second-bar a {
+	color: #9fa3a9;
+}
+
+#contatos a {
+	color: white;
 }
 
 #myFooter .second-bar a:hover {
@@ -403,7 +394,7 @@ textarea {
     float:right;
 }
 
-#myFooter .facebook:hover {
+#myFooter .facebook:hover, #contatos .facebook:hover {
     color: #0077e2;
 }
 
@@ -411,7 +402,7 @@ textarea {
     color: #ef1a1a;
 }
 
-#myFooter .instagram:hover {
+#myFooter .instagram:hover, #contatos .instagram:hover {
     color: #e95950;
 }
 
