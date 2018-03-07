@@ -20,7 +20,7 @@ if(isset($email,$assunto,$mensagem)){
         $mail->Port = 587;
 
         $mail->setFrom($email);
-        $mail->addAddress('equipeecodeltar@gmail.com');
+        $mail->addAddress('equipeecodelta@gmail.com');
             
         $mail->isHtml(true);
         $mail->Subject = $assunto;
